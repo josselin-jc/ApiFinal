@@ -11,15 +11,7 @@ namespace ApiFinal.Controllers
 {
     public class AccessController : ApiController
     {
-        [HttpGet]
-        public Reply HelloWord()
-        {
-            Reply oR = new Reply();
-            oR.result = 1;
-            oR.menssage = "Hola Mundo";
-
-            return oR;
-        }
+      
         [HttpPost]
         public Reply Login([FromBody] AccessViewModel model)
         {

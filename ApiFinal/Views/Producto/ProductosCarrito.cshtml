@@ -21,8 +21,9 @@ else
             <dd>@prod.Nombre</dd>
             <dd>@prod.Precio</dd>
             <dd>
-                @Html.ActionLink("Eliminar del Carrito", "ProductosCarrito", "Producto", new { id = prod.IdProducto }, null)
-            </dd>
+                @Html.ActionLink("Eliminar del Carrito", "ProductosCarrito", "Producto", new { id = prod.IdProducto } , null)
+            </dd
+
             <br />
         }
     </dl>
